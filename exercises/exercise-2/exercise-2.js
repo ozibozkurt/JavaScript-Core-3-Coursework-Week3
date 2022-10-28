@@ -70,3 +70,20 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+let findHouse = (arr) => {
+  arr.forEach(({ firstName, lastName, house }) => {
+    if (house === "Gryffindor") {
+      console.log(`${firstName} ${lastName}`);
+    }
+  });
+};
+findHouse(hogwarts);
+
+let whomPets = (arr) => {
+  arr.forEach(({ firstName, lastName, pet, occupation }) => {
+    if (occupation === "Teacher" && pet !== null) {
+      console.log(`${firstName} ${lastName}`);
+    }
+  });
+};
+whomPets(hogwarts);

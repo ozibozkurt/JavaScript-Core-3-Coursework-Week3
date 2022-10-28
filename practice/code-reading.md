@@ -16,6 +16,8 @@ Take a look at the following code:
 
 Explain why line 4 and line 6 output different numbers.
 
+There are two variables called x, inside is local, outside is global variables.
+
 ## Question 2
 
 Take a look at the following code:
@@ -34,6 +36,9 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+First output will be 10, because the function is being called
+The second will return undefined, because y hasn't been returned and is a local variable.
 
 ## Question 3
 
@@ -62,3 +67,6 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+ First one will be 9, because the variable is declared with const globally.
+The second one will be {x: 10}, because the function is being called changing the value of the object key x globally.
